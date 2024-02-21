@@ -1,0 +1,123 @@
+---
+title: "Space & Blue Economy"
+title-slide-attributes:
+  data-background-image: images/ocean.jpg
+  data-background-size: cover
+  data-background-opacity: "0.7"
+author: "Radha Krishna"
+format: revealjs
+---
+
+## Opportunities {background-color="skyblue"}
+
+-   Fishing
+-   Security
+-   Value extraction
+
+## Fishing pain points {background-color="skyblue"}
+
+::: columns
+::: {.column width="40%"}
+**Fishing support**
+
+-   Potential Fishing Zones
+-   Fishing effort
+-   Inputs for distributors/processors ( Aquaconnect )
+:::
+
+::: {.column width="60%"}
+**Fishing administration**
+
+-   IUU Fishing
+-   Supply / Demand analysis
+-   Weather + Satellite data based alerts?
+:::
+:::
+
+## Global Fishing Watch ( AIS + VMS ) {background-color="skyblue"}
+
+::: panel-tabset
+### Fishing efforts
+
+![](images/Screenshot%20from%202024-02-21%2013-50-40.png)
+
+### Vessel Tracking
+
+![](images/Screenshot%20from%202024-02-21%2013-50-51.png)
+
+### See GFW!
+
+[Click this link to see Global fishing watch](https://globalfishingwatch.org/map/index?start=2024-01-24T00%3A00%3A00.000Z&end=2024-02-18T00%3A00%3A00.000Z&latitude=11.097832699432004&longitude=81.03192309978272&zoom=5.658995521998617)
+:::
+
+## Potential Fishing Zones {background-color="skyblue"}
+
+![INCOIS PFZ <https://incois.gov.in/geoportal/MFASPFZ/index.html>](images/Screenshot%20from%202024-02-21%2014-12-28.png)
+
+## Fish processing ( AQ-C ) {background-color="skyblue"}
+
+![Surface water map](images/Screenshot%20from%202024-02-21%2014-15-45.png)
+
+## Secuirty Pain points {background-color="skyblue"}
+
+-   Shipping routes monitoring
+-   Dark ships
+-   IUU Fishing ..
+
+## Shipping routes {background-color="skyblue"}
+
+```{python}
+from ipyleaflet import Map, Marker ,GeoJSON 
+import json 
+from ipywidgets import Layout
+
+# Create a map centered at a specific location
+m = Map(center=[9, 76], zoom=3, layout=Layout( height='600px'))
+
+# Add a marker at a specific location
+marker = Marker(location=[0,0], draggable=False)
+
+lanes='Shipping_Lanes_v1.geojson'
+with open(lanes, 'r') as f:
+    data = json.load(f)
+geo_json = GeoJSON(
+    data=data,
+)
+m.add(geo_json)
+
+# Display the map
+m
+```
+
+## Darkships ( AIS == OFF ) {.scrollable background-color="skyblue"}
+
+Ships turn off AIS when they don't want to be seen
+
+1)  How to track them/their activities?
+2)  Comprehensive ship database/dashbaord?
+
+## Darkships ( AIS == OFF ) {.scrollable background-color="skyblue"}
+
+![](images/paste-2.png)
+
+![](images/paste-3.png)
+
+## Underwater cables! {.scrollable background-color="skyblue"}
+
+-   Deep water survey and inspection.
+
+-   Monitoring Deep water cables
+
+    ![](images/paste-4.png){width="304"}
+
+## Value extraction {.scrollable background-color="skyblue"}
+
+-   Under Water Mining ( CAGR 40% )
+-   Water quality parameters ( Buoys & IOT Devices )
+-   Deep sea maps ( India just opened this opportunity )
+
+## Agencies {.scrollable background-color="skyblue"}
+- NAVY , COASTGUARD 
+- NIOT , NCPOR , INCOIS 
+- IORA , IOTA ( IUU )
+- MOES , MOF&AH , MOF ( SG )
