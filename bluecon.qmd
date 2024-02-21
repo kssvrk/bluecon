@@ -8,6 +8,10 @@ author: "Radha Krishna"
 format: revealjs
 ---
 
+## Follow along {background-color="skyblue"}
+
+![](images/bluecon.png){fig-alt="background-color=skyblue" width="348"}
+
 ## Opportunities {background-color="skyblue"}
 
 -   Fishing
@@ -117,7 +121,8 @@ Ships turn off AIS when they don't want to be seen
 -   Deep sea maps ( India just opened this opportunity )
 
 ## Agencies {.scrollable background-color="skyblue"}
-- NAVY , COASTGUARD 
-- NIOT , NCPOR , INCOIS 
-- IORA , IOTA ( IUU )
-- MOES , MOF&AH , MOF ( SG )
+
+-   NAVY , COASTGUARD
+-   NIOT , NCPOR , INCOIS
+-   IORA , IOTA ( IUU )
+-   MOES , MOF&AH , MOF ( SG )
